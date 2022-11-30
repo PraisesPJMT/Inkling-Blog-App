@@ -51,9 +51,10 @@
 </details>
 
 <details>
-  <summary>Linter</summary>
+  <summary>Linters</summary>
   <ul>
     <li><a href="https://rubocop.org/">Rubocop</a></li>
+    <li><a href="https://stylelint.io/">Stylelint</a></li>
   </ul>
 </details>
 
@@ -132,8 +133,8 @@ To run the project, execute the following command:
 > - [X] Ticked features represents implemented features 
 > - [ ] Un ticked features represents features being worked on 
 - [X] **Creating a data model**
+- [X] **Processing data in models**
 - [ ] **Validations and Model specs**
-- [ ] **Processing data in models**
 - [ ] **Setup and controllers**
 - [ ] **Controllers specs**
 - [ ] **Views**
