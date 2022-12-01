@@ -134,7 +134,7 @@ To run the project, execute the following command:
 > - [ ] Un ticked features represents features being worked on 
 - [X] **Creating a data model**
 - [X] **Processing data in models**
-- [ ] **Validations and Model specs**
+- [X] **Validations and Model specs**
 - [ ] **Setup and controllers**
 - [ ] **Controllers specs**
 - [ ] **Views**
