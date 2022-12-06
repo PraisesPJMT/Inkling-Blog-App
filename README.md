@@ -1,26 +1,26 @@
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-    - [🛠 Built With](#built-with)
-        - [Tech Stack](#tech-stack)
-        - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-    - [Setup](#setup)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Inkling Blog ](#-inkling-blog-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [📝 License](#license)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [📝 License ](#-license-)
 
 # 📖 Inkling Blog <a name="about-project"></a>
 
-> The Inkling Blog app is a classic blog website. 
-> It is a fully functional website that will show 
-> the list of posts and empower readers to interact 
+> The Inkling Blog app is a classic blog website.
+> It is a fully functional website that will show
+> the list of posts and empower readers to interact
 > with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -130,13 +130,13 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > These are features that will be add to the project.
-> - [X] Ticked features represents implemented features 
-> - [ ] Un ticked features represents features being worked on 
+> - [X] Ticked features represents implemented features
+> - [ ] Un ticked features represents features being worked on
 - [X] **Creating a data model**
 - [X] **Processing data in models**
 - [X] **Validations and Model specs**
-- [ ] **Setup and controllers**
-- [ ] **Controllers specs**
+- [X] **Setup and controllers**
+- [X] **Controllers specs**
 - [ ] **Views**
 - [ ] **Integration specs for Views and fixing `n+1` problems**
 - [ ] **Add Devise**
