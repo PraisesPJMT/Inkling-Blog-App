@@ -1,2 +1,25 @@
-<h1>Posts</h1>
-<p>Here are the list of posts made by the user</p>
+<h2><%= @user.name %>'s Posts</h2>
+<div class="user-list">
+    <% @user.posts.each do |post| %>
+        <a class="user-post-box" href=<%= user_post_path(@user.id, post.id) %>>
+            <h4><%= post.title %></h4>
+            <p><%= post.text[0..150] %>...</p>
+            <div class="user-post-count">
+                <span>Comments: <%= post.comments_counter %></span>
+                <span class="seperator">|</span>
+                <span>Likes: <%= post.likes_counter %></span>
+            </div>
+            <div class="comment-box">
+                <% post.comments.each do |comment| %>
+                    <div class="comment">
+                        <img class="comment-avatar" src=<%= User.find(comment.author_id).photo %> alt=<%= User.find(comment.author_id).name %>>
+                        <div class="comment-card">
+                            <p class="comment-details"><span><%= User.find(comment.author_id).name %></span> | <span><%= comment.created_at %></span></p>
+                            <p><%= comment.text %></p>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </a>
+    <% end %>
+</div>
