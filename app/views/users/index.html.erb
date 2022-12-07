@@ -1,2 +1,15 @@
 <h1>Inkling Blog Users</h1>
-<p>Here are the list of users in the Inkling blog</p>
+<div class="user-list">
+    <% @users.each do |user| %>
+        <a class="user-box" href="users/<%= user.id %>">
+            <img class="user-avatar" src=<%= user.photo %> alt=<%= user.name %>>
+            <div class="user-summary">
+                <h3 class="user-name"><%= user.name %></h3>
+                <p><%= user.bio[0..100] %>...</p>
+                <div class="user-post-count">
+                    <span>Number of posts: <%= user.posts.count %></span>
+                </div>
+            </div>
+        </a>
+    <% end %>
+</div>
