@@ -35,3 +35,6 @@ node_modules
 
 # JetBrains Folders
 .idea
+
+# Thrunk Folders
+.trunk

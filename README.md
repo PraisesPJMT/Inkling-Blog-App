@@ -137,7 +137,7 @@ To run the project, execute the following command:
 - [X] **Validations and Model specs**
 - [X] **Setup and controllers**
 - [X] **Controllers specs**
-- [ ] **Views**
+- [X] **Views**
 - [ ] **Integration specs for Views and fixing `n+1` problems**
 - [ ] **Add Devise**
 - [ ] **Add authorization rules**
