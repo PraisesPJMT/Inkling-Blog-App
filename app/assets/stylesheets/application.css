@@ -1,15 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -93,7 +82,8 @@ h2 {
   gap: 20px;
 }
 
-.see-btn {
+.see-btn,
+.post-btn {
   margin: auto;
   color: #000;
   font-weight: 700;
@@ -101,11 +91,85 @@ h2 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .see-btn:hover {
   background: #ccc;
-  border: none;
+}
+
+.post-btn {
+  color: #379237;
+  background: #fff;
+  border: 1px solid #379237;
+  cursor: pointer;
+}
+
+.post-btn:hover {
+  color: #fff;
+  background: #379237;
+}
+
+.like-btn {
+  margin: 0 20px 0 auto;
+  color: #3b44f6;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #3b44f6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  color: #fff;
+  background: #3b44f6;
+}
+
+.commit-btn {
+  margin: 0 0 0 auto;
+  color: #2e2f30;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #2e2f30;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.commit-btn:hover {
+  color: #fff;
+  background: #2e2f30;
+}
+
+.add-comment-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-comment-text-box {
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.add-comment-text-box:focus {
+  border: 1px solid #999;
+  outline: none;
+}
+
+.like-form {
+  display: flex;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  background: #e0e0e040;
+  padding: 20px;
 }
 
 .comment-box {
