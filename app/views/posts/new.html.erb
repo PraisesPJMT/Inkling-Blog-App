@@ -1,0 +1,13 @@
+<h2>New Post</h2>
+
+<%= form_with model: @post, url: user_posts_path, method: :post, locals: true, scope: :post do |form| %>
+    <div class="title-box">
+      <%= form.label :title, class: "label" %>
+      <%= form.text_field :title, class: "input" %>
+    </div>
+    <div class="text-box">
+      <%= form.label :text, class: "label" %>
+      <%= form.text_area :text, class: "input" %>
+    </div>
+    <%= form.submit value: "Create Post"%>
+<% end %>
