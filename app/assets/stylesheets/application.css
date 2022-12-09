@@ -149,15 +149,19 @@ h2 {
   margin-bottom: 20px;
 }
 
-.add-comment-text-box {
+.add-comment-text-box,
+.input {
   width: 90%;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
+  outline: none;
 }
 
-.add-comment-text-box:focus {
-  border: 1px solid #999;
+.add-comment-text-box:focus,
+.input:focus {
+  border: 1px solid #555;
+  background: #eee;
   outline: none;
 }
 
@@ -170,6 +174,19 @@ h2 {
   flex-direction: column;
   background: #e0e0e040;
   padding: 20px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-box,
+.text-box {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .comment-box {
