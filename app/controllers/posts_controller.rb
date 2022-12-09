@@ -7,4 +7,26 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
   end
+
+  def new
+    @post = Post.new
+
+    render :new, locals: { post: @post }
+  end
+
+  def create
+    post = current_user.posts.new(params.require(:post).permit(:title, :text))
+
+    respond_to do |format|
+      format.html do
+        if post.save
+          flash[:success] = 'Post created successfully!'
+          redirect_to user_posts_path(current_user)
+        else
+          flash[:error] = 'Something went wrong! Post not created!'
+          render :new, locals: { post: }
+        end
+      end
+    end
+  end
 end
