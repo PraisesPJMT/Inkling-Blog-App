@@ -6,6 +6,7 @@
         <span>Likes: <%= @post.likes_counter %></span>
     </div>
     <p><%= @post.text %></p>
+    <%= render "likes/add_like"%>
     <div class="comment-box">
         <% @post.comments.each do |comment| %>
             <div class="comment">
@@ -21,4 +22,5 @@
             </div>
         <% end %>
     </div>
+    <%= render "comments/add_comment"%>
 </div>

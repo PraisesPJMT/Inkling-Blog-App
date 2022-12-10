@@ -138,6 +138,7 @@ To run the project, execute the following command:
 - [X] **Setup and controllers**
 - [X] **Controllers specs**
 - [X] **Views**
+- [X] **Add forms**
 - [ ] **Integration specs for Views and fixing `n+1` problems**
 - [ ] **Add Devise**
 - [ ] **Add authorization rules**

@@ -14,6 +14,12 @@
         <h4>Bio</h4>
         <p><%= @user.bio %></p>
     </div>
+    <% if @current_user %>
+      <a class="btn post-btn" href="/users/<%= @user.id %>/posts/new">
+        Create New Post
+      </a>
+    <% end %>
+
 
     <div class="user-post-list">
         <% @user.recent_posts.each do |post| %>
