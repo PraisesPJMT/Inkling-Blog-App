@@ -1,7 +1,7 @@
 <h2><%= @user.name %>'s Posts</h2>
 <div class="user-list">
     <% @user.posts.each do |post| %>
-        <a class="user-post-box" href=<%= user_post_path(@user.id, post.id) %>>
+        <a id="post-box<%=post.id%>" class="user-post-box" href=<%= user_post_path(@user.id, post.id) %>>
             <h4><%= post.title %></h4>
             <p><%= post.text[0..150] %>...</p>
             <div class="user-post-count">

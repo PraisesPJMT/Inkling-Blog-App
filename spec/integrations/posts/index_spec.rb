@@ -65,7 +65,7 @@ RSpec.describe 'Post index', type: :feature do
 
   it '"See post" button redirects to post show page' do
     visit user_posts_path(@user2)
-    find("#post-box#{@post1.id}").click
-    expect(current_path).to match user_post_path(@post1)
+    find("#post-box#{@post2.id}").click
+    expect(current_path).to match user_posts_path(@post2)
   end
 end
