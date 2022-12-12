@@ -10,11 +10,11 @@
                 <span>Likes: <%= post.likes_counter %></span>
             </div>
             <div class="comment-box">
-                <% post.comments.each do |comment| %>
+                <% post.comments.includes(:author).each do |comment| %>
                     <div class="comment">
-                        <img class="comment-avatar" src=<%= User.find(comment.author_id).photo %> alt=<%= User.find(comment.author_id).name %>>
+                        <img class="comment-avatar" src=<%= comment.author.photo %> alt=<%= comment.author.name %>>
                         <div class="comment-card">
-                            <p class="comment-details"><span><%= User.find(comment.author_id).name %></span> | <span><%= comment.created_at %></span></p>
+                            <p class="comment-details"><span><%= comment.author.name %></span> | <span><%= comment.created_at %></span></p>
                             <p><%= comment.text %></p>
                         </div>
                     </div>

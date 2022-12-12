@@ -1,8 +1,2 @@
 <h1>Add Comment</h1>
-<%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id), class: "comment-form", scope: :comment do  |form| %>
-  <div class="add-comment-box">
-    <%= form.label :text, "Add Comment: ", class: "label" %>
-    <%= form.text_area :text, class: "add-comment-text-box", rows: "5" %>
-  </div>
-  <%= form.submit value: "Add Comment", type: "submit", class: "commit-btn" %>
-<% end %>
+<%= render "comments/add_comment"%>
