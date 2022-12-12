@@ -33,11 +33,5 @@ RSpec.describe 'User index: ', type: :feature do
   it 'redirects to user show page when a user is clicked' do
     find("#user-box#{@user1.id}").click
     expect(current_path).to match user_path(@user1)
-    # user-box
-    # <%= link_to "Add New Comment", new_user_post_comment_path(user_id: @user.id, post_id: @post.id) %>
-    # within all('a')[0] do |user|
-    #   # click_link user
-    #   visit users_path
-    # end
   end
 end

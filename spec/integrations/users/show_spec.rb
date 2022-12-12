@@ -43,7 +43,7 @@ RSpec.describe 'User show: ', type: :feature do
 
   it 'display user\'s recent three posts' do
     visit user_path @user1
-    @user_1.recent_posts.each do |post|
+    @user1.recent_posts.each do |post|
       expect(page).to have_content post.text
     end
   end
@@ -57,5 +57,11 @@ RSpec.describe 'User show: ', type: :feature do
     visit user_path @user2
     click_link 'See all posts'
     expect(page).to have_current_path user_posts_path(@user2)
+  end
+
+  it '"See post" button redirects to post show page' do
+    visit user_path(@user2)
+    find("#post-box#{@post1.id}").click
+    expect(current_path).to match user_post_path(@post1)
   end
 end
