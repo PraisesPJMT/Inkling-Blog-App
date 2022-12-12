@@ -90,31 +90,36 @@ RSpec.describe Post, type: :model do
   describe 'Tests:' do
     context 'Methods of Post:' do
       it '#update_posts_counter should be zero on initialization of User' do
-        new_test_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-                                    bio: 'Teacher from Mexico.')
-        new_test_user.save
+        new_test_user = User.create(name: 'Tom', photo: 'photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
         expect(new_test_user.posts_counter).to eq 0
       end
 
       it '#update_posts_counter should reflect addition os multiple posts' do
+        test_user = User.create(name: 'Tom', photo: 'photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
+        Post.create(author: test_user, title: 'Hello', text: 'This is my first post')
+        Post.create(author: test_user, title: 'Hey', text: 'This is my first post')
+        Post.create(author: test_user, title: 'Greetings', text: 'This is my first post')
+        Post.create(author: test_user, title: 'Introduction', text: 'This is my first post')
+        Post.create(author: test_user, title: 'Apology', text: 'This is my first post')
+        Post.create(author: test_user, title: 'Hello', text: 'This is my first post')
         expect(test_user.posts_counter).to eq 6
       end
 
       it '#recent_comments method should return zero(0) when new post is created' do
-        fourth_post.save
         expect(fourth_post.recent_comments.count).to eq 0
       end
 
       it '#recent_comments method should return last five(5) comments on post' do
-        fifth_post.save
-        Comment.create(post: fifth_post, author: test_user, text: 'Hi Tom!')
-        Comment.create(post: fifth_post, author: test_user, text: 'What an interesting topic')
-        Comment.create(post: fifth_post, author: test_user, text: 'I love cats as pet')
-        Comment.create(post: fifth_post, author: test_user, text: 'Liverpool FC is the best')
-        Comment.create(post: fifth_post, author: test_user, text: 'The USA is evil')
-        Comment.create(post: fifth_post, author: test_user, text: 'Ruby on Rails is cool')
-        Comment.create(post: fifth_post, author: test_user, text: 'I am an atheist')
-        expect(fifth_post.recent_comments.count).to eq 5
+        new_test_user = User.create(name: 'Tom', photo: 'photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
+        test_post = Post.create(author: test_user, title: 'Hello', text: 'This is my first post')
+        Comment.create(post: test_post, author: new_test_user, text: 'Hi Tom!')
+        Comment.create(post: test_post, author: new_test_user, text: 'What an interesting topic')
+        Comment.create(post: test_post, author: new_test_user, text: 'I love cats as pet')
+        Comment.create(post: test_post, author: new_test_user, text: 'Liverpool FC is the best')
+        Comment.create(post: test_post, author: new_test_user, text: 'The USA is evil')
+        Comment.create(post: test_post, author: new_test_user, text: 'Ruby on Rails is cool')
+        Comment.create(post: test_post, author: new_test_user, text: 'I am an atheist')
+        expect(test_post.recent_comments.count).to eq 5
       end
     end
   end
