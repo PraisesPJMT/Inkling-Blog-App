@@ -125,6 +125,12 @@ To run the project, execute the following command:
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:praisesmusa@gmail.com)
 [![AngelList](https://img.shields.io/badge/AngelList-%23D4D4D4.svg?style=for-the-badge&logo=AngelList&logoColor=black)](https://angel.co/u/praises-tula/)
 
+👤 **Moathal Kachi**
+
+- [@github](https://github.com/Moathal)
+- [@LinkedIn](https://www.linkedin.com/in/moathalkachi)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
