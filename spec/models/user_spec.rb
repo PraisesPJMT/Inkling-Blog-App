@@ -62,13 +62,15 @@ RSpec.describe User, type: :model do
       end
 
       it '#recent_posts method should return last three(5) posts of user' do
-        Post.create(author: third_user, title: 'Independence', text: 'Independence leads to freedom')
-        Post.create(author: third_user, title: 'Codding',
+        new_user = User.create(name: 'Elli', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                               bio: 'Teacher from China.')
+        Post.create(author: new_user, title: 'Independence', text: 'Independence leads to freedom')
+        Post.create(author: new_user, title: 'Codding',
                     text: 'Software development is a crucial aspect of tech industry')
-        Post.create(author: third_user, title: 'Nigeria', text: 'Nigeria is a beautiful country to visit')
-        Post.create(author: third_user, title: 'Microverse',
+        Post.create(author: new_user, title: 'Nigeria', text: 'Nigeria is a beautiful country to visit')
+        Post.create(author: new_user, title: 'Microverse',
                     text: 'Is Microverse really the best tech school out there?')
-        expect(third_user.recent_posts.count).to eq 3
+        expect(new_user.recent_posts.count).to eq 3
       end
     end
   end
