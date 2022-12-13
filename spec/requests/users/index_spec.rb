@@ -9,7 +9,6 @@ RSpec.describe 'Users index', type: :request do
     get users_path
   end
 
-
   it 'returns http success' do
     expect(response).to have_http_status(:success)
   end
