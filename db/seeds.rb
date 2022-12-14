@@ -18,35 +18,59 @@ bio: 'Prince of the Targaryen dynasty, and the younger brother of King Viserys I
 
 user_3 = User.create( name: 'Queen Rhaenyra Targaryen',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Queen_Rhaenyra_Targaryen.png',
-bio: 'Queen Rhaenyra Targaryen is the daughter and only surviving child of King Viserys I Targaryen and his first wife, Queen Aemma Arryn. She disputes the claim of her younger half-brother Aegon II, using the style Queen of the Andals and the Rhoynar and the First Men, Lady of the Seven Kingdoms, and Protector of the Realm. A dragonrider, her mount is the she-dragon Syrax.' )
+bio: 'Queen Rhaenyra Targaryen is the daughter and only surviving child of King Viserys I Targaryen and his first wife, Queen Aemma Arryn. She disputes the claim of her younger half-brother Aegon II, using the style Queen of the Andals and the Rhoynar and the First Men, Lady of the Seven Kingdoms, and Protector of the Realm. A dragonrider, her mount is the she-dragon Syrax.',
+email: 'queenr_haenyra@email',
+password: 'queenr_haenyra@password',
+password_confirmation: 'queenr_haenyra@password' )
 
 user_4 = User.create( name: 'Queen Alicent Hightower',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Queen_Alicent_Hightower.png',
-bio: 'Second wife of King Viserys I Targaryen and daughter of Ser Otto Hightower, the Hand of the King. ' )
+bio: 'Second wife of King Viserys I Targaryen and daughter of Ser Otto Hightower, the Hand of the King. ',
+                      email: 'queenr_alicent@email',
+                      password: 'queenr_alicent@password',
+                      password_confirmation: 'queenr_alicent@password' )
 
 user_5 = User.create( name: 'Ser Otto Hightower',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Ser_Otto_Hightower.png',
-bio: 'Knight of House Hightower and the Hand of the King to Kings Jaehaerys I, Viserys I, and Aegon II.' )
+bio: 'Knight of House Hightower and the Hand of the King to Kings Jaehaerys I, Viserys I, and Aegon II.',
+                      email: 'ser_otto@email',
+                      password: 'ser_otto@password',
+                      password_confirmation: 'ser_otto@password' )
 
 user_6 = User.create( name: 'Prince Aemond Targaryen',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Prince_Aemond_Targaryen.png',
-bio: 'Prince of the Targaryen dynasty and the third child of King Viserys I Targaryen and Queen Alicent Hightower. He is the rider of the dragon Vhagar.' )
+bio: 'Prince of the Targaryen dynasty and the third child of King Viserys I Targaryen and Queen Alicent Hightower. He is the rider of the dragon Vhagar.',
+                      email: 'prince_aemond@email',
+                      password: 'prince_aemond@password',
+                      password_confirmation: 'prince_aemond@password' )
 
 user_7 = User.create( name: 'King Aegon II Targaryen',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/King_Aegon_II_Targaryen.png',
-bio: 'Sixth King of the Andals and the Rhoynar and the First Men and Lord of the Seven Kingdoms. His rule is currently disputed by his older half-sister, Rhaenyra Targaryen. He is the firstborn son of King Viserys I Targaryen and his second wife, Queen Alicent Hightower. He is the rider of the dragon Sunfyre.' )
+bio: 'Sixth King of the Andals and the Rhoynar and the First Men and Lord of the Seven Kingdoms. His rule is currently disputed by his older half-sister, Rhaenyra Targaryen. He is the firstborn son of King Viserys I Targaryen and his second wife, Queen Alicent Hightower. He is the rider of the dragon Sunfyre.',
+                      email: 'king_aegon@email',
+                      password: 'king_aegon@password',
+                      password_confirmation: 'king_aegon@password' )
 
 user_8 = User.create( name: 'Queen Daenerys I Targaryen',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Queen_Daenerys_I_Targaryen.png',
-bio: 'The First of Her Name, Queen of the Andals and the First Men, Protector of the Seven Kingdoms, the Mother of Dragons, the Khaleesi of the Great Grass Sea, the Unburnt, the Breaker of Chains, though the style was occasionally shortened to Daenerys of the House Targaryen, the First of Her Name, Breaker of Chains and Mother of Dragons.' )
+bio: 'The First of Her Name, Queen of the Andals and the First Men, Protector of the Seven Kingdoms, the Mother of Dragons, the Khaleesi of the Great Grass Sea, the Unburnt, the Breaker of Chains, though the style was occasionally shortened to Daenerys of the House Targaryen, the First of Her Name, Breaker of Chains and Mother of Dragons.',
+                      email: 'queen_daenerys@email',
+                      password: 'queen_daenerys@password',
+                      password_confirmation: 'queen_daenerys@password' )
 
 user_9 = User.create( name: 'Jon Snow',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Jon_Snow.png',
-bio: 'Son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, Jon is presented as the bastard son of Lord Eddard Stark, Lyanna\'s brother, and raised alongside Eddard\'s lawful children at Winterfell. Jon\'s true parentage is kept secret from everyone, including Jon himself, in order to protect him from those that sought the complete annihilation of House Targaryen.' )
+bio: 'Son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, Jon is presented as the bastard son of Lord Eddard Stark, Lyanna\'s brother, and raised alongside Eddard\'s lawful children at Winterfell. Jon\'s true parentage is kept secret from everyone, including Jon himself, in order to protect him from those that sought the complete annihilation of House Targaryen.',
+                      email: 'jon_snow@email',
+                      password: 'jon_snow@password',
+                      password_confirmation: 'jon_snow@password' )
 
 user_10 = User.create( name: 'Queen Cersei I Lannister',
 photo: 'https://raw.githubusercontent.com/PraisesPJMT/Data/main/profiles/Queen_Cersei_I_Lannister.png',
-bio: 'The twentieth ruler of the Seven Kingdoms and the widow of King Robert Baratheon. She was the daughter of Lord Tywin Lannister, twin sister of Jaime Lannister and elder sister of Tyrion Lannister. She was involved in an incestuous relationship with Jaime, who was secretly the father of her three bastard children, Joffrey, Myrcella and Tommen.' )
+bio: 'The twentieth ruler of the Seven Kingdoms and the widow of King Robert Baratheon. She was the daughter of Lord Tywin Lannister, twin sister of Jaime Lannister and elder sister of Tyrion Lannister. She was involved in an incestuous relationship with Jaime, who was secretly the father of her three bastard children, Joffrey, Myrcella and Tommen.',
+                       email: 'queen_cersei@email',
+                       password: 'queen_cersei@password',
+                       password_confirmation: 'queen_cersei@password' )
 
 post_1 = Post.create(author: user_1, title: 'My Reign',
 text: 'Viserys inherited the realm after an unprecedented fifty years of peace and prosperity under his grandfather, a golden age that Viserys strives not to disrupt.[2] A full century after the Targaryen Conquest, their dynasty\'s rule is unchallenged - save for still-independent Dorne, though relations with them have also been calm and stable for decades.' )
