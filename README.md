@@ -127,8 +127,8 @@ To run the project, execute the following command:
 
 👤 **Moathal Kachi**
 
-- [@github](https://github.com/Moathal)
-- [@LinkedIn](https://www.linkedin.com/in/moathalkachi)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Moathal)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moathalkachi)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,8 +145,8 @@ To run the project, execute the following command:
 - [X] **Controllers specs**
 - [X] **Views**
 - [X] **Add forms**
-- [ ] **Integration specs for Views and fixing `n+1` problems**
-- [ ] **Add Devise**
+- [X] **Integration specs for Views and fixing `n+1` problems**
+- [X] **Add Devise**
 - [ ] **Add authorization rules**
 - [ ] **Add API endpoints.**
 
