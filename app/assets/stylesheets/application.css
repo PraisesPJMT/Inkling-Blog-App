@@ -3,10 +3,12 @@
  *= require_self
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
   margin: 0;
   padding: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -113,12 +115,13 @@ h2,
 }
 
 .like-btn {
-  margin: 0 20px 0 auto;
   color: #3b44f6;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
   text-decoration: none;
-  padding: 10px;
-  border: 1px solid #3b44f6;
+  padding: 0.5em;
+  border: 2px solid #3b44f6;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -133,7 +136,7 @@ h2,
   color: #2e2f30;
   font-weight: 700;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.5em;
   border: 1px solid #2e2f30;
   border-radius: 8px;
   background: #fff;
@@ -210,7 +213,7 @@ h2,
 }
 
 .comment-card {
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
   width: 100%;
   border-radius: 10px;
   background: #eee;
@@ -296,7 +299,7 @@ header {
 
 .link {
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   color: #000;
@@ -313,7 +316,7 @@ header {
 
 .sign-btn {
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0.5em;
@@ -356,4 +359,10 @@ header {
   color: #fff;
   background: #b00100;
   border: 2px solid #b00100;
+}
+
+.clicks {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
 }

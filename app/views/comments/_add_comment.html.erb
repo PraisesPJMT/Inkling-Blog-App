@@ -1,4 +1,4 @@
-<%= form_with model: @comment, url: "/users/#{:user_id}/posts/#{:post_id}/comments/new", class: "comment-form", scope: :comment do  |form| %>
+<%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id), class: "comment-form", scope: :comment do  |form| %>
   <div class="add-comment-box">
     <%= form.label :text, "Add Comment: ", class: "label" %>
     <%= form.text_area :text, class: "add-comment-text-box", rows: "5" %>

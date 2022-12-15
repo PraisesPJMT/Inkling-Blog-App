@@ -147,7 +147,7 @@ To run the project, execute the following command:
 - [X] **Add forms**
 - [X] **Integration specs for Views and fixing `n+1` problems**
 - [X] **Add Devise**
-- [ ] **Add authorization rules**
+- [X] **Add authorization rules**
 - [ ] **Add API endpoints.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
