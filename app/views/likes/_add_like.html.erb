@@ -1,3 +1,4 @@
 <%= form_with model: @like, url: user_post_likes_path(@user.id, @post.id), class: "like-form" do |form| %>
   <%= form.submit value: "Like Post", type: "submit", class: "like-btn" %>
+  <%= button_to "Delete Post", user_post_path, method: :delete, class: "sign-btn delete-btn"%>
 <% end %>

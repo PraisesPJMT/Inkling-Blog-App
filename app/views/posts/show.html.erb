@@ -6,7 +6,12 @@
         <span>Likes: <%= @post.likes_counter %></span>
     </div>
     <p><%= @post.text %></p>
-    <%= render "likes/add_like"%>
+    <div class="clicks">
+        <%= button_to "Like Post", user_post_likes_path(current_user.id, @post.id), method: :post, class: "like-btn"%>
+        <% if can? :destroy, @post %>
+            <%= button_to "Delete Post", user_post_path, method: :delete, class: "sign-btn delete-btn"%>
+        <% end %>
+    </div>
     <div class="comment-box">
         <% @post.comments.includes(:author).each do |comment| %>
             <div class="comment">
@@ -18,6 +23,12 @@
                         <span><%= comment.created_at %></span>
                     </p>
                     <p><%= comment.text %></p>
+                    <% if can? :destroy, @post %>
+                        <div class="clicks">
+                            <%= button_to "Delete", user_post_comment_path(@user, @post, comment), method: :delete, class: "sign-btn delete-btn"%>
+                        </div>
+                    <% end %>
+
                 </div>
             </div>
         <% end %>
