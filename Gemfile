@@ -55,6 +55,8 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 
 gem 'cancancan', '~> 3.4'
 
+gem 'active_model_serializers', '~> 0.10.13'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'bullet'

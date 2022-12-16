@@ -11,6 +11,9 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :posts_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
 
+  # after_save :add_token
+  after_create :add_token
+
   # User::Roles
   # The available roles
   ROLES = %i[admin default].freeze
@@ -21,5 +24,11 @@ class User < ApplicationRecord
 
   def recent_posts
     posts.order('created_at Desc').limit(3)
+  end
+
+  private
+
+  def add_token
+    update_column(:access_token, SecureRandom.hex(13))
   end
 end

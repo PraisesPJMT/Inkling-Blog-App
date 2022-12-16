@@ -136,8 +136,6 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > These are features that will be add to the project.
-> - [X] Ticked features represents implemented features
-> - [ ] Un ticked features represents features being worked on
 - [X] **Creating a data model**
 - [X] **Processing data in models**
 - [X] **Validations and Model specs**
@@ -148,7 +146,7 @@ To run the project, execute the following command:
 - [X] **Integration specs for Views and fixing `n+1` problems**
 - [X] **Add Devise**
 - [X] **Add authorization rules**
-- [ ] **Add API endpoints.**
+- [X] **Add API endpoints.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

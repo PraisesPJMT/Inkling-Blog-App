@@ -4,6 +4,7 @@
   <% if current_user %>
     <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "link" %>
     <%= link_to "Edit Profile", edit_user_registration_path, class: "link" %>
+    <%= link_to "API Token", access_token_path, class: "link" %>
     <a href=<%= user_path(current_user) %> class="header-avatar">
       <img src="<%= current_user.photo %>" alt=<%= current_user.name %> />
     </a>
