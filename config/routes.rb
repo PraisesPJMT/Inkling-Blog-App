@@ -10,10 +10,23 @@ Rails.application.routes.draw do
 
   root to: "users#index"
 
+  get "users/token" => 'users#token', :as => :access_token
+
   resources :users, only: %i[index show] do
     resources :posts, only: %i[index show new create destroy] do
       resources :comments, only: %i[new create destroy]
       resources :likes, only: %i[create]
+    end
+  end
+
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: %i[index show] do
+        resources :posts, only: %i[index show new create destroy] do
+          resources :comments, only: %i[new create destroy]
+          resources :likes, only: %i[create]
+        end
+      end
     end
   end
 end
